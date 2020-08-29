@@ -11,7 +11,7 @@ class App < Sinatra::Base
   end
   
   post '/chechout' do
-    @sessions = session
+    @sessions = sessions
     item = param[:item]
     @sessions[:item] = item
   end
